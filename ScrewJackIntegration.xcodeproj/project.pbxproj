@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1F07451D1AE58C00DB3594 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07441D1AE58C00DB3594 /* FBSDKCoreKit.framework */; };
+		8C1F07471D1AE5B000DB3594 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07461D1AE5B000DB3594 /* FBSDKLoginKit.framework */; };
+		8C1F07491D1AE5C700DB3594 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07481D1AE5C700DB3594 /* FBSDKShareKit.framework */; };
 		8CBFFA9F1D1988A20030B60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFFA9E1D1988A20030B60B /* AppDelegate.swift */; };
 		8CBFFAA11D1988A20030B60B /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFFAA01D1988A20030B60B /* LoginPageViewController.swift */; };
 		8CBFFAA41D1988A20030B60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBFFAA21D1988A20030B60B /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C1F07441D1AE58C00DB3594 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8C1F07461D1AE5B000DB3594 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8C1F07481D1AE5C700DB3594 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		8CBFFA9B1D1988A20030B60B /* ScrewJackIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrewJackIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFFA9E1D1988A20030B60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBFFAA01D1988A20030B60B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1F07471D1AE5B000DB3594 /* FBSDKLoginKit.framework in Frameworks */,
+				8C1F07451D1AE58C00DB3594 /* FBSDKCoreKit.framework in Frameworks */,
+				8C1F07491D1AE5C700DB3594 /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1F07431D1AE4ED00DB3594 /* Framworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C1F07481D1AE5C700DB3594 /* FBSDKShareKit.framework */,
+				8C1F07461D1AE5B000DB3594 /* FBSDKLoginKit.framework */,
+				8C1F07441D1AE58C00DB3594 /* FBSDKCoreKit.framework */,
+			);
+			path = Framworks;
+			sourceTree = "<group>";
+		};
 		8CBFFA921D1988A20030B60B = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +122,7 @@
 				8CBFFAA51D1988A20030B60B /* Assets.xcassets */,
 				8CBFFAA71D1988A20030B60B /* LaunchScreen.storyboard */,
 				8CBFFAAA1D1988A20030B60B /* Info.plist */,
+				8C1F07431D1AE4ED00DB3594 /* Framworks */,
 			);
 			path = ScrewJackIntegration;
 			sourceTree = "<group>";
@@ -401,6 +421,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrewJackIntegration/Framworks",
+				);
 				INFOPLIST_FILE = ScrewJackIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.-GauravKhupekar.ScrewJackIntegration";
@@ -412,6 +436,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScrewJackIntegration/Framworks",
+				);
 				INFOPLIST_FILE = ScrewJackIntegration/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tw.-GauravKhupekar.ScrewJackIntegration";
@@ -484,6 +512,7 @@
 				8CBFFAC51D1988A20030B60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CBFFAC61D1988A20030B60B /* Build configuration list for PBXNativeTarget "ScrewJackIntegrationTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +521,7 @@
 				8CBFFAC81D1988A20030B60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CBFFAC91D1988A20030B60B /* Build configuration list for PBXNativeTarget "ScrewJackIntegrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				8CBFFACB1D1988A20030B60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
