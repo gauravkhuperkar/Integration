@@ -10,6 +10,7 @@
 		8C1F07451D1AE58C00DB3594 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07441D1AE58C00DB3594 /* FBSDKCoreKit.framework */; };
 		8C1F07471D1AE5B000DB3594 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07461D1AE5B000DB3594 /* FBSDKLoginKit.framework */; };
 		8C1F07491D1AE5C700DB3594 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1F07481D1AE5C700DB3594 /* FBSDKShareKit.framework */; };
+		8C7172BD1D1D548B0089F87D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7172BC1D1D548B0089F87D /* DetailsViewController.swift */; };
 		8CBFFA9F1D1988A20030B60B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFFA9E1D1988A20030B60B /* AppDelegate.swift */; };
 		8CBFFAA11D1988A20030B60B /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFFAA01D1988A20030B60B /* LoginPageViewController.swift */; };
 		8CBFFAA41D1988A20030B60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBFFAA21D1988A20030B60B /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 		8C1F07441D1AE58C00DB3594 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8C1F07461D1AE5B000DB3594 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		8C1F07481D1AE5C700DB3594 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		8C1F074A1D1AE89C00DB3594 /*  Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = " Bridging-Header.h"; sourceTree = "<group>"; };
+		8C7172BC1D1D548B0089F87D /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		8CBFFA9B1D1988A20030B60B /* ScrewJackIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrewJackIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFFA9E1D1988A20030B60B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBFFAA01D1988A20030B60B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 			children = (
 				8CBFFA9E1D1988A20030B60B /* AppDelegate.swift */,
 				8CBFFAA01D1988A20030B60B /* LoginPageViewController.swift */,
+				8C7172BC1D1D548B0089F87D /* DetailsViewController.swift */,
+				8C1F074A1D1AE89C00DB3594 /*  Bridging-Header.h */,
 				8CBFFAA21D1988A20030B60B /* Main.storyboard */,
 				8CBFFAA51D1988A20030B60B /* Assets.xcassets */,
 				8CBFFAA71D1988A20030B60B /* LaunchScreen.storyboard */,
@@ -278,6 +283,7 @@
 			files = (
 				8CBFFAA11D1988A20030B60B /* LoginPageViewController.swift in Sources */,
 				8CBFFA9F1D1988A20030B60B /* AppDelegate.swift in Sources */,
+				8C7172BD1D1D548B0089F87D /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
